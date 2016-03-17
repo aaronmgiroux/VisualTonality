@@ -1,0 +1,52 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"     
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu"          
+    tools:context=".MainActivity">
+    
+   <!-- <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-8110186678980015/7356212135"
+                         ads:adSize="SMART_BANNER"                         
+                         ads:loadAdOnCreate="true"/> -->
+
+    <ImageButton
+        android:id="@+id/practiceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tutorialBtn"
+        android:layout_below="@+id/tutorialBtn"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/practicebtn" />
+
+    <ImageButton
+        android:id="@+id/tutorialBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/tutorialbtn" />
+
+    <ImageButton
+        android:id="@+id/helpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/infoBtn"
+        android:src="@drawable/help" />
+
+    <ImageButton
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/helpBtn"
+        android:src="@drawable/info" />
+
+</RelativeLayout>

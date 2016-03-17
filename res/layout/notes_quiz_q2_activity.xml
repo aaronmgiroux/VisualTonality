@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notes_quiz2"    
+    tools:context=".MainActivity" >
+    
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-8110186678980015/7356212135"
+                         ads:adSize="SMART_BANNER"                         
+                         ads:loadAdOnCreate="true"/>
+
+    <Button
+        android:id="@+id/submitBtnNQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:textColor="#ffffff"
+        android:text="Submit" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitBtnNQ2"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/radio01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:text="@string/cdefg" />
+
+        <RadioButton
+            android:id="@+id/radio11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cdef"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/radio21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cdefga"
+            android:textColor="#ffffff" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textCorrect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/submitBtnNQ2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:text="Correct!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textWrong2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCorrect2"
+        android:layout_alignBottom="@+id/textCorrect2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="@string/wrong"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/nextBtnNotesQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/nextbtn" />
+
+    <ImageButton
+        android:id="@+id/backBtnNotesQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/backbtn" />
+
+</RelativeLayout>

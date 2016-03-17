@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/piano"
+    android:gravity="center"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="61dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jinglebells_color" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/backBtnPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/backbtn2" />
+
+    <ImageButton
+        android:id="@+id/bBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bbutton2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playSheetMusic"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/sheetbar" />
+
+    <ImageButton
+        android:id="@+id/cBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dBtn2"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/cbutton2" />
+
+    <ImageButton
+        android:id="@+id/dBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eBtn2"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/dbutton2" />
+
+    <ImageButton
+        android:id="@+id/eBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fBtn2"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ebutton2" />
+
+    <ImageButton
+        android:id="@+id/fBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gBtn2"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/fbutton2" />
+
+    <ImageButton
+        android:id="@+id/gBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aBtn2"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/gbutton2" />
+
+    <ImageButton
+        android:id="@+id/aBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bBtn2"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/abutton2" />
+
+    <ImageButton
+        android:id="@+id/playSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/gBtn2"
+        android:src="@drawable/playwithout" />
+
+    <ImageButton
+        android:id="@+id/playSheetMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cBtn2"
+        android:src="@drawable/playwith" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tutorialsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_menu"    
+    tools:context=".MainActivity" >
+    
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-8110186678980015/7356212135"
+                         ads:adSize="SMART_BANNER"                         
+                         ads:loadAdOnCreate="true"/>
+
+    <ImageButton
+        android:id="@+id/octavesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chordsBtn"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/octavesbtn" />
+
+    <ImageButton
+        android:id="@+id/notesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chordsBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="127dp"
+        android:src="@drawable/notesbtn" />
+
+    <ImageButton
+        android:id="@+id/chordsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/octavesBtn"
+        android:layout_below="@+id/notesBtn"
+        android:src="@drawable/chordsbtn" />
+
+    <ImageButton
+        android:id="@+id/backBtnTutorials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/backbtn" />
+
+</RelativeLayout>

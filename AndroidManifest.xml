@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amgprogramming.visualtonality"
+    android:versionCode="6"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />   
+        
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="MainActivity" android:screenOrientation="portrait" 
+            android:label="@string/app_name" >             
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AboutActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="TutorialsActivity" android:screenOrientation="portrait"></activity>        
+        <activity android:name="HelpActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="PracticeActivity" android:screenOrientation="portrait"></activity>        
+        <activity android:name="InfoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Notes1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="SongsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="ChordsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="OctavesActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Notes2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Notes3Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="NotesQuizActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="NotesQuizQ2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="NotesQuizQ3Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="ChordsQuizActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="ChordsQuizQ2Activity" android:screenOrientation="portrait"></activity>        
+        <activity android:name="OctavesQuizActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="OctavesQuizQ2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="OctavesQuizQ3Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="ChordsQuizQ3Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Octaves2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Octaves3Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Octaves4Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Octaves5Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Octaves6Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Octaves7Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Notes21Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Notes25Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Treble1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Treble2Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Treble3Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Treble4Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Bass1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="Bass2Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Bass3Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="Bass4Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="CMajor1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="CMajor2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="CMajor3Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="CMajor4Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="GMajor1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="GMajor2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="GMajor3Activity" android:screenOrientation="landscape"></activity>
+        <activity android:name="FMajor1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="FMajor2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="FMajor3Activity" android:screenOrientation="landscape"></activity>  
+        
+        <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        
+    </application>
+    
+    
+
+</manifest>

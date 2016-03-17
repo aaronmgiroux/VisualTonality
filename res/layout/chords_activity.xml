@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cMajorBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chords_background"    
+    tools:context=".MainActivity" >
+    
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-8110186678980015/7356212135"
+                         ads:adSize="SMART_BANNER"                         
+                         ads:loadAdOnCreate="true"/>
+
+    <ImageButton
+        android:id="@+id/oneOctaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/cmajor" />
+
+    <ImageButton
+        android:id="@+id/fMajorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oneOctaveBtn"
+        android:layout_below="@+id/oneOctaveBtn"
+        android:src="@drawable/fmajor" />
+
+    <ImageButton
+        android:id="@+id/gMajorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fMajorBtn"
+        android:layout_below="@+id/fMajorBtn"
+        android:src="@drawable/gmajor" />
+
+    <ImageButton
+        android:id="@+id/evalBtnChords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gMajorBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/evaluation_chords" />
+
+    <ImageButton
+        android:id="@+id/backBtnChords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/backbtn" />
+
+</RelativeLayout>

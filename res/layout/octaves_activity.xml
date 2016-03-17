@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_octaves"    
+    tools:context=".MainActivity" >
+    
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-8110186678980015/7356212135"
+                         ads:adSize="SMART_BANNER"                         
+                         ads:loadAdOnCreate="true"/>
+
+    <ImageButton
+        android:id="@+id/evalBtnOctaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/eval_octaves" />
+
+    <ImageButton
+        android:id="@+id/oneOctaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/evalBtnOctaves"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/piano_octaves" />
+
+    <ImageButton
+        android:id="@+id/octaveOneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/evalBtnOctaves"
+        android:layout_below="@+id/oneOctaveBtn"
+        android:src="@drawable/button_octaves" />
+
+    <ImageButton
+        android:id="@+id/backBtnOct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/backbtn" />
+
+</RelativeLayout>
